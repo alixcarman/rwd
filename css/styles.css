@@ -5,3 +5,54 @@ body {
 /*tiled background use png*/
 /*transparency: png color: png white: jpg;*/
 
+/* ********* Layout ********* */
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+	background: orange;
+}
+
+article section {
+	float: left;
+	width: 50%;
+}
+
+article:after {
+	clear: both;
+}
+
+iframe, img {
+	max-width: 100%;
+	width: 100%;
+}
+
+/*Desktop*/
+
+@media (min-width: 960px) {
+	#top {
+		width: 300px;
+	}
+}
+
+/*Tablet*/
+
+@media (min-width: 768px) {
+	section img {
+		width: 80%;
+	}
+
+	section h1 {
+
+		text-transform: uppercase;
+		color: orange;
+	}
+}
+
+/*Mobile*/
+
+@media (min-width: 768px) {
+	section img {
+	float: none;
+	{}
+}
