@@ -10,12 +10,16 @@ body {
 .container {
 	width: 95%;
 	margin: 0 auto;
-	background: orange;
+}
+
+#contact {
+	text-align: center;
 }
 
 article section {
 	float: left;
 	width: 50%;
+	text-align: center;
 }
 
 article:after {
@@ -27,11 +31,33 @@ iframe, img {
 	width: 100%;
 }
 
+nav li{
+	display: inline-block;
+	margin: auto;
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+	padding-left: 1em;
+	color: black;
+}
+
+nav a:hover {
+	text-transform: underline;
+}
+
+/*article section img:hover {
+	background: red;
+	opacity: 20%;
+}*/
+
 /*Desktop*/
 
 @media (min-width: 960px) {
 	#top {
-		width: 300px;
+		width: 10em;
+		padding-top: 1em
 	}
 }
 
@@ -39,13 +65,10 @@ iframe, img {
 
 @media (min-width: 768px) {
 	section img {
-		width: 80%;
+		width: 100%;
 	}
-
 	section h1 {
-
 		text-transform: uppercase;
-		color: orange;
 	}
 }
 
@@ -54,5 +77,5 @@ iframe, img {
 @media (min-width: 768px) {
 	section img {
 	float: none;
-	{}
+	}
 }
